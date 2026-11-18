@@ -144,6 +144,7 @@ body {
   align-items: center;
   gap: 0.875rem;
   padding: 1rem 1.125rem;
+  cursor: pointer;
   border-radius: var(--radius);
   background: var(--card);
   border: 1px solid var(--card-border);
@@ -166,6 +167,11 @@ body {
 
 .link-card:active {
   transform: translateY(0);
+}
+
+.link-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .link-card--highlight {
@@ -242,6 +248,10 @@ body {
   opacity: 0.85;
 }
 
+.footer__click {
+  display: none;
+}
+
 @media (min-width: 480px) {
   .page {
     padding-top: 3.5rem;
@@ -249,5 +259,94 @@ body {
 
   .profile__name {
     font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    background:
+      radial-gradient(900px 480px at 18% 18%, rgba(255, 193, 7, 0.14), transparent 60%),
+      radial-gradient(700px 420px at 88% 86%, rgba(225, 6, 0, 0.16), transparent 62%),
+      linear-gradient(165deg, var(--bg-deep) 0%, var(--bg-mid) 48%, #1a0c0a 100%);
+  }
+
+  .page {
+    max-width: 1080px;
+    padding: 3rem 2.5rem 2rem;
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    grid-template-rows: 1fr auto;
+    column-gap: 3.5rem;
+    align-items: safe center;
+  }
+
+  .profile {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  .links {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .footer {
+    grid-column: 1 / -1;
+    margin-top: 2.5rem;
+  }
+
+  .footer__touch {
+    display: none;
+  }
+
+  .footer__click {
+    display: block;
+  }
+
+  .glow--top {
+    width: 420px;
+    height: 420px;
+    top: -120px;
+    right: auto;
+    left: -80px;
+  }
+
+  .glow--bottom {
+    width: 360px;
+    height: 360px;
+    right: -100px;
+    left: auto;
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+
+  .profile__name {
+    font-size: 2.75rem;
+  }
+
+  .profile__bio {
+    font-size: 1.125rem;
+    max-width: 24ch;
+  }
+
+  .links__list {
+    gap: 0.9rem;
+  }
+
+  .link-card {
+    padding: 1.05rem 1.35rem;
+  }
+
+  .link-card__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .link-card__title {
+    font-size: 1.125rem;
   }
 }

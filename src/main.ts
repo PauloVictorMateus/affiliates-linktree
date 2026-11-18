@@ -66,7 +66,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </nav>
 
     <footer class="footer">
-      <p>Toque em um grupo para abrir no WhatsApp</p>
+      <p class="footer__touch">Toque em um grupo para abrir no WhatsApp</p>
+      <p class="footer__click">Clique em um grupo para abrir no WhatsApp</p>
     </footer>
   </main>
 `
