@@ -126,6 +126,74 @@ body {
   margin-inline: auto;
 }
 
+.socials {
+  margin-top: 1.25rem;
+}
+
+.socials__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.social {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.social svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.social:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.35);
+}
+
+.social:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.social--youtube {
+  background: #ff0033;
+}
+
+.social--tiktok {
+  background: #111111;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 8px 18px rgba(0, 0, 0, 0.28);
+}
+
+.social--kwai {
+  background: #ff6a00;
+}
+
+.social--instagram {
+  background: radial-gradient(circle at 30% 110%, #feda75 0%, #fa7e1e 28%, #d62976 58%, #962fbf 78%, #4f5bd5 100%);
+}
+
+.social--facebook {
+  background: #1877f2;
+}
+
 .links {
   flex: 1;
 }

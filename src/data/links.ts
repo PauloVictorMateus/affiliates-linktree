@@ -13,6 +13,40 @@ export const profile = {
   avatarUrl: "/promo-top.jpg",
 };
 
+export type SocialLink = {
+  id: string;
+  label: string;
+  url: string;
+};
+
+export const socialLinks: SocialLink[] = [
+  {
+    id: "youtube",
+    label: "YouTube",
+    url: "https://www.youtube.com/@bom-diario/shorts",
+  },
+  {
+    id: "tiktok",
+    label: "TikTok",
+    url: "https://www.tiktok.com/@topsimprodutos",
+  },
+  {
+    id: "kwai",
+    label: "Kwai",
+    url: "https://www.kwai.com/@felicitacaodiaria",
+  },
+  {
+    id: "instagram",
+    label: "Instagram",
+    url: "https://www.instagram.com/felicitacaodiaria/",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    url: "https://www.facebook.com/people/Felicita%C3%A7%C3%B5es-Di%C3%A1rias/61596885983321/",
+  },
+];
+
 export const promoLinks: PromoLink[] = [
   {
     id: "promo-top",
